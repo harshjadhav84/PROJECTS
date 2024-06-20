@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
+
+        #parent{
+            height: 600px;
+            width: 600px;
+            border: 2px solid black;
+            border-radius: 50%;
+            background-color: yellow;
+
+        }
+
+        .eyes{
+            height: 150px;
+            width: 150px;
+            border: 2px solid ;
+            border-radius: 50%;
+            background-color: white;
+            display: inline-block;
+            position: relative;
+            margin-top: 105px;
+            margin-left: 80px;   
+            animation-name: eye;
+            animation-iteration-count: infinite;
+            animation-duration: 1s;
+           
+        }
+        #circle1:hover{
+            height: 160px;
+            width: 160px;
+        }
+        #circle2:hover{
+            height: 160px;
+            width: 160px;
+        }
+
+        .blackeye{
+            height: 50px;
+            width: 50px;
+            border: 1px solid ;
+            border-radius: 50%;
+            background-color: black;
+            margin-top: 40px;
+            text-align: center;
+            color: black;
+             
+        }
+        #blackeye1:hover{
+            background-color: red;
+        }
+        #blackeye2:hover{
+            background-color: red;
+        }
+
+        #tongue{
+            height: 150px;
+            width: 250px;
+            border: 2px solid;
+            border-bottom-right-radius: 150px;
+            border-bottom-left-radius: 150px;
+            background-color: red;
+            margin-top: 53px;
+            margin-left: 165px;
+            position: absolute;
+        }
+
+        #tongue:hover{
+            background-color: pink;
+            height: 250px;
+        }
+
+        @keyframes eye{
+            from{
+                transform:rotate(0deg)
+            }
+            to{ 
+                transform: rotate(360deg);
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <div id="circle1" class="eyes">
+            <div id="blackeye1" class="blackeye"></div>
+        </div>
+
+        <div id="circle2" class="eyes">
+            <div id="blackeye2" class="blackeye"></div>
+        </div>
+        <br><br>
+        <div id="tongue"></div>
+    </div>
+</body>
+</html>
